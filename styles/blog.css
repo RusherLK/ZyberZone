@@ -1,0 +1,156 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height:10vh;
+    width:100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+    margin-top: 30px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.blog-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    background-color:   #e6e6e6;
+    padding: 2% 0;
+}
+
+.blogspace{
+    width: 60%;
+    background-color: #fff;
+    padding: 5%;
+    margin-bottom: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.more{
+    display: none;
+ }
+
+.blogs{
+    padding: 1% 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.blogs h1{
+    margin-left: 20%;
+    font-size: 50px;
+    width: 80%;
+    color: black;
+    /*padding-top: 50px;*/
+    text-align: left;
+    /*margin: auto;*/
+    font-weight: 600;
+}
+
+.blogspace h1{
+    font-size: 35px;
+    /*width: 80%;*/
+    color: gray;
+    text-align: center;
+    margin: auto;
+    font-weight: 600;
+}
+
+.blogspace p{
+    font-size: 18px;
+    /*width: 80%;*/
+    color: black;
+    padding-top: 50px;
+    text-align: left;
+    margin: auto;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.blogspace img{
+    width: 60%;
+    height: 60%;
+}
+
+.blogspace button{
+    margin: 3% 0;
+}
+
+.blogspace .dots{
+    font-size: 2.5rem;
+}
+
+/*-------footer------*/
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h5{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: red;
+}

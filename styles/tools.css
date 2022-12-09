@@ -1,0 +1,108 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height:10vh;
+    width:100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+    margin-top: 30px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.tools h1{
+    font-size: 50px;
+    width: 80%;
+    color: black;
+    padding-top: 50px;
+    text-align: left;
+    margin: auto;
+    font-weight: 600;
+}
+
+.tools ol{
+    font-size: 35px;
+    width: 80%;
+    color: gray;
+    padding-top: 50px;
+    text-align: left;
+    margin: auto;
+    font-weight: 600;
+}
+
+/*-------footer------*/
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h5{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: red;
+}
+
+.toolhead{
+    width: 80%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
