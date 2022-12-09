@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Password Strength Checker With HTML, CSS, & javaScript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/tools.css">
+
+    <section class="header">
+        <nav>
+            <a href="../../index.html"><img src="../../images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../tools.html">TOOLS</a></li>
+                    <li><a href="../../blog.html">BLOG</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                    <li><a href="../../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </section>
+</head>
+
+<body style="background-color:black;">
+    <div onclick="toggleMode()" class="mode">DarkMode <i class="fas fa-moon"></i></div>
+    <div class="container">
+        <header>Password Strength Indicator</header>
+        <form action="#">
+            <div class="field">
+                <input onkeyup="trigger()" type="password" placeholder="Type password">
+                <span class="showBtn">SHOW</span>
+            </div>
+            <div class="indicator">
+                <span class="weak"></span>
+                <span class="medium"></span>
+                <span class="strong"></span>
+            </div>
+            <div class="text"></div>
+        </form>
+
+        <div class="checklist_wrapper">
+            <ul class="check_list">
+              <li>Use at least 10 characters long password.     
+              <li class="uppercase_char">Use at least one uppercase letter.</li>
+              <li class="special_char">Use special characters (e.g. @%...).</li>
+              <li class="number">Use digits.</li>
+            </ul>
+          </div>
+    
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="main.js" async defer></script>
+
+     <!------footer------>
+
+     <hr>
+     <section class="footer">
+       <h5><font color="white">About Us</font></h5>
+       <p>Offer engaging learning experiences that go beyond traditional Learning Management Systems.<br>LearnWorlds is an intuitive, lightweight, eCommerce-ready LMS, packed with advanced features to sell<br>online courses, educate customers, or train employees.</p>
+       <div class="icons">
+           <i class="fa fa-facebook"></i> 
+           <i class="fa fa-twitter"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-linkedin"></i>
+           <i class="fa fa-github"></i>
+       </div>
+       <p>Made with by <i class="fa fa-heart-o"></i> KnowledgeBank</p>
+   </section>
+   </footer>
+</body>
+
+</html>
